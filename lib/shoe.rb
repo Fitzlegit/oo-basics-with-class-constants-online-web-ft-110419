@@ -1,3 +1,5 @@
+require 'pry'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -10,6 +12,7 @@ class Shoe
       BRANDS.each do |unique_brand| 
       if unique_brand == brand
         BRANDS << brand
+        binding.pry
       end
     end
   end
