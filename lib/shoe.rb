@@ -11,7 +11,7 @@ class Shoe
     
     BRANDS << brand
       BRANDS.each do |unique_brand| 
-      if unique_brand.empty
+      if unique_brand.empty?
         BRANDS << brand
         binding.pry
       end
