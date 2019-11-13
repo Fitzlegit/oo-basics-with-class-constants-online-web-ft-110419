@@ -9,7 +9,6 @@ class Shoe
   def initialize(brand)
     @brand = brand
     
-    BRANDS << brand
       BRANDS.each do |unique_brand| 
       if unique_brand.empty?
         BRANDS << brand
